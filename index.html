@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="shortcut icon" href="/HTML/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <h1 style="color: blueviolet">welcome to learners page</h1>
+    <h2>Create Account</h2>
+    <form action="/practicepage/"> 
+        <!--or new line we can use br tag but its good to use div and p tag because they are block elements-->
+      <p><div><label for="naam">Name</label></div>
+        <input type="text" name="naam" id="naam" placeholder="Enter your name" required/></p>
+      <p><div><label for="phno">Mobile number</label></div>
+        <input
+          type="tel"    
+          minlength="10"
+          name="mb.number"
+          maxlength="10"
+          id="phno"
+          placeholder="Enter your mobile number" required
+        /></p> <!--we cant use minlength,maxlength on number type thats why use tel-->
+      <p><div><label for="email">Email</label></div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email" required
+        /></p>
+      <p><div><label for="password">password</label></div>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          minlength="6"
+          maxlength="10" required
+        /></p>
+        <div><input type="checkbox" required> Agree to Terms and Conditions</div>
+      <button type="reset">reset</button>
+      <button>submit</button> <!--default type of a button is submit-->
+    </form>
+  </body>
+</html>
